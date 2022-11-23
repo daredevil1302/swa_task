@@ -12,7 +12,7 @@ const ScoreList = ({ data }: listPropType) => {
       <strong>SCORE LIST:</strong>
       {Object.keys(data).map((key) => (
         <span key={key}>
-          {key} : {data[key]}
+          {key.toUpperCase()} : {data[key]}
         </span>
       ))}
     </div>
